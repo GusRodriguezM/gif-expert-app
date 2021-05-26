@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <GrifGridItem/> Should show <GrifGridItem/> correctly 1`] = `
+<div
+  className="card animate__animated animate__fadeInLeftBig animate__delay-2s"
+>
+  <img />
+  <p />
+</div>
+`;
