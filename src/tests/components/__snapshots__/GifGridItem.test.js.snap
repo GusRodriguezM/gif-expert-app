@@ -1,10 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tests in <GrifGridItem/> Should show <GrifGridItem/> correctly 1`] = `
+exports[`Tests in <GrifGridItem/> Should render <GrifGridItem/> correctly 1`] = `
 <div
   className="card animate__animated animate__fadeInLeftBig animate__delay-2s"
 >
-  <img />
-  <p />
+  <img
+    alt="Justa generic title"
+    src="https://localhost:3000/someImage.jpg"
+  />
+  <p>
+    Justa generic title
+  </p>
 </div>
 `;

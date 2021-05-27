@@ -5,11 +5,13 @@ import GifGridItem from '../../components/GifGridItem';
 
 describe('Tests in <GrifGridItem/>', () => {
    
-    let wrapper = shallow(<GifGridItem/>);
+    const title = 'Justa generic title';
+    const url = 'https://localhost:3000/someImage.jpg';
 
     
-    test('Should show <GrifGridItem/> correctly', () => {
+    test('Should render <GrifGridItem/> correctly', () => {
 
+        const wrapper = shallow(<GifGridItem title={title} url={url}/>);
         expect(wrapper).toMatchSnapshot();
 
     });
