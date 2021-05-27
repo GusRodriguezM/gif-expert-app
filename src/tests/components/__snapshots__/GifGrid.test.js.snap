@@ -30,6 +30,12 @@ exports[`Tests in <GifGrid/> component Should render items when images are loade
       title="Any Gif"
       url="https://localhost/any/gif"
     />
+    <GifGridItem
+      id="XYZ987"
+      key="XYZ987"
+      title="Any Gif"
+      url="https://localhost/any/gif"
+    />
   </div>
 </Fragment>
 `;

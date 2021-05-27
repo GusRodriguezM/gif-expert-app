@@ -24,11 +24,18 @@ describe('Tests in <GifGrid/> component', () => {
     
     test('Should render items when images are loaded with useFetchGifs custom hook ', () => {
 
-        const gifs = [{
-            id: 'ABC123',
-            url: 'https://localhost/any/gif',
-            title: 'Any Gif'
-        }];
+        const gifs = [
+            {
+                id: 'ABC123',
+                url: 'https://localhost/any/gif',
+                title: 'Any Gif'
+            },
+            {
+                id: 'XYZ987',
+                url: 'https://localhost/any/gif',
+                title: 'Any Gif'
+            }
+        ];
 
         useFetchGifs.mockReturnValue({
             data: gifs,
@@ -38,6 +45,8 @@ describe('Tests in <GifGrid/> component', () => {
         const wrapper = shallow(<GifGrid category={category}/>);
 
         expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find('p').exists()).toBe(false);
+        expect(wrapper.find('GifGridItem').length).toBe(gifs.length);
 
     });
     
