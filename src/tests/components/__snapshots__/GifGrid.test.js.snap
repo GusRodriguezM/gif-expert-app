@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <GifGrid/> component Should render <GrifGrid/> correctly 1`] = `
+<Fragment>
+  <h3>
+    Dragon Ball
+  </h3>
+  <p
+    className="animate__animated animate__pulse"
+  >
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Tests in <GifGrid/> component Should render items when images are loaded with useFetchGifs custom hook  1`] = `
+<Fragment>
+  <h3>
+    Dragon Ball
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC123"
+      key="ABC123"
+      title="Any Gif"
+      url="https://localhost/any/gif"
+    />
+  </div>
+</Fragment>
+`;
