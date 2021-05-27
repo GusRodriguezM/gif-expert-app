@@ -37,5 +37,19 @@ describe('Tests in <AddCategory/>', () => {
         expect(setCategories).not.toHaveBeenCalled();
         
     });
+
+    test('should call setCategories and reset the value of the input', () => {
+        
+        const value = 'Hola Mundo';
+
+        wrapper.find('input').simulate('change', {target: {value}});
+
+        wrapper.find('form').simulate('submit', { preventDefault(){ } });
+
+        expect(setCategories).toHaveBeenCalled();
+
+        expect(wrapper.find('input').prop('value')).toBe('');
+
+    });
     
 });
