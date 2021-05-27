@@ -4,6 +4,7 @@ exports[`Tests in <AddCategory/> Should render <AddCategory/> correctly 1`] = `
 <form
   onSubmit={[Function]}
 >
+  <p />
   <input
     onChange={[Function]}
     type="text"
